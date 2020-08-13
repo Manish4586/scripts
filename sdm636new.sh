@@ -16,7 +16,7 @@ TOOL_DIR="/home/manish/toolchain/"
 TOOL=$TOOL_DIR/proton-clang
 PATH=$TOOL/bin:${PATH}
 ANYKERN="/home/manish/Documents/kernel/"
-ZIP=$ANYKERN/whyred
+ZIP=$ANYKERN/whyredn
 
 make O=out ARCH=arm64 whyred-newperf_defconfig
 make -j$(nproc --all) O=out \

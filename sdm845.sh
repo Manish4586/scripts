@@ -16,9 +16,9 @@ TOOL_DIR="/home/manish/toolchain/"
 TOOL=$TOOL_DIR/proton-clang
 PATH=$TOOL/bin:${PATH}
 ANYKERN="/home/manish/Documents/kernel/"
-ZIP=$ANYKERN/lavender
+ZIP=$ANYKERN/enchilada
 
-make O=out ARCH=arm64 lavender_defconfig
+make O=out ARCH=arm64 enchilada-perf_defconfig
 make -j$(nproc --all) O=out \
                       ARCH=arm64 \
                       CC=clang \

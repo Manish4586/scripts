@@ -36,7 +36,6 @@ rm *.zip
 FINAL_ZIP="RohieKernel-CatX-whyred-${date}.zip"
 zip -r9 "${FINAL_ZIP}" *
 rm Image.gz-dtb
-rm *.zip
 
 cd $SOURCE
 
