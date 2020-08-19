@@ -18,7 +18,7 @@ PATH=$TOOL/bin:${PATH}
 ANYKERN="/home/manish/Documents/kernel/"
 ZIP=$ANYKERN/whyred
 
-make O=out ARCH=arm64 whyred-perf_defconfig
+make O=out ARCH=arm64 whyred_defconfig
 make -j$(nproc --all) O=out \
                       ARCH=arm64 \
                       CC=clang \

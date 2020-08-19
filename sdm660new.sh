@@ -16,9 +16,9 @@ TOOL_DIR="/home/manish/toolchain/"
 TOOL=$TOOL_DIR/proton-clang
 PATH=$TOOL/bin:${PATH}
 ANYKERN="/home/manish/Documents/kernel/"
-ZIP=$ANYKERN/lavender
+ZIP=$ANYKERN/jasminen
 
-make O=out ARCH=arm64 lavender_defconfig
+make O=out ARCH=arm64 jasmine-newperf_defconfig
 make -j$(nproc --all) O=out \
                       ARCH=arm64 \
                       CC=clang \
@@ -33,7 +33,7 @@ make -j$(nproc --all) O=out \
 cd $ZIP
 cp $HMM/arch/arm64/boot/Image.gz-dtb $ZIP/
 rm *.zip
-FINAL_ZIP="RohieKernel-CatX-lavender-${date}.zip"
+FINAL_ZIP="RohieKernel-CatX-newcam-${date}.zip"
 zip -r9 "${FINAL_ZIP}" *
 rm Image.gz-dtb
 
