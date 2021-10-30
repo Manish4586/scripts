@@ -31,12 +31,12 @@ make -j$(nproc --all) O=out \
                       CROSS_COMPILE=aarch64-linux-gnu- ;
 
 cd $ZIP
-cp $HMM/arch/arm64/boot/Image.gz-dtb $ZIP/
+cp $HMM/arch/arm64/boot/Image.gz $ZIP/
 cp $HMM/arch/arm64/boot/dtbo.img $ZIP/
 rm *.zip
-FINAL_ZIP="RohieKernel-CatX-alioth-${date}.zip"
+FINAL_ZIP="RohieKernel-Meow-alioth-${date}.zip"
 zip -r9 "${FINAL_ZIP}" *
-rm Image.gz-dtb
+rm Image.gz
 rm dtbo.img
 
 cd $SOURCE
